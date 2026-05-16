@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
-  const navListRef = document.querySelector(".p-q-navigation-list");
-  const headerRef = document.querySelector(".p-q-header");
-  const navigationRef = document.querySelector(".p-q-navigation");
+  const navListRef = document.querySelector(".p-e-navigation-list");
+  const headerRef = document.querySelector(".p-e-header");
+  const navigationRef = document.querySelector(".p-e-navigation");
 
   menuBtnRef.addEventListener("click", () => {
     menuBtnRef.classList.toggle("is-open");
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navigationRef.classList.toggle("is-open");
   });
 
-  document.querySelectorAll(".p-q-navigation-link").forEach((n) =>
+  document.querySelectorAll(".p-e-navigation-link").forEach((n) =>
     n.addEventListener("click", () => {
       navListRef.classList.remove("is-open");
       menuBtnRef.classList.remove("is-open");
